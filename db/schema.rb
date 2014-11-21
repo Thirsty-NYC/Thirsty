@@ -11,6 +11,32 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20141121223108) do
+
+  create_table "bars", force: true do |t|
+    t.string "name"
+    t.string "location"
+    t.string "hours_operation"
+    t.string "phone_number"
+    t.string "description"
+    t.string "picture"
+    t.string "url"
+  end
+
+  create_table "days", force: true do |t|
+    t.string "Monday"
+    t.string "Tuesday"
+    t.string "Wednesday"
+    t.string "Thursday"
+    t.string "Friday"
+    t.string "Satday"
+    t.string "Sunday"
+  end
+
+  create_table "specials", force: true do |t|
+    t.integer "day_id"
+    t.integer "bar_id"
+    t.string  "info"
+  end
 
 end
