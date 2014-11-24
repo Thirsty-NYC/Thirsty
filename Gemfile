@@ -34,7 +34,7 @@ gem 'nokogiri'
 
 gem 'httparty'
 
-
+gem 'yelp', require: 'yelp'
 
 
 
