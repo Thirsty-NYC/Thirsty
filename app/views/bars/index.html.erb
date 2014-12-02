@@ -13,8 +13,8 @@
 	<div style="display:none" id="pageTwo">
 		<%= image_tag "map_manhattan.png" %>
 		<select>
-			<% @bars.each do |bar| %>
-			<option value=<%=bar.id %>> <%=bar.name%></option>
+			<% @neighborhoods.each do |neighborhood| %>
+			<option value=<%=neighborhood.id %>> <%=neighborhood.name%></option>
 			<% end %>
 		</select>
 			
