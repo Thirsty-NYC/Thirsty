@@ -24,7 +24,7 @@ while i < 12
 			array_sunday = bar_url.css("table")[3].text.split("Happy Hour Specials*:")[1].split("\n")[1].split("  ")
 			sunday = array_sunday[0].split(":")[0]
 			sunday_special = array_sunday[1]
-	# binding.pry
+
 			if array_sunday[2] != nil && array_sunday[2].split("").include?("(") && array_sunday[2].split("").include?(")")
 				sunday_time = array_sunday[2].split("(")[1].split(")")[0]
 			end 
@@ -133,3 +133,5 @@ while i < 12
 	puts i
 	i += 1
 end
+
+
