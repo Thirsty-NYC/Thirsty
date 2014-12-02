@@ -2,6 +2,7 @@ class BarsController < ApplicationController
 
 	def index
 		@bars = Bar.all
+		@neighborhoods = Neighborhood.all
 		render :index
 	end 
 	
