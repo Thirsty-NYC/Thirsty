@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141122003012) do
+ActiveRecord::Schema.define(version: 20141125060103) do
 
   create_table "bars", force: true do |t|
     t.string "name"
@@ -21,6 +21,14 @@ ActiveRecord::Schema.define(version: 20141122003012) do
     t.string "picture"
     t.string "url"
     t.string "neighborhood"
+  end
+
+  create_table "comments", force: true do |t|
+    t.string   "comments"
+    t.integer  "bar_id"
+    t.string   "category"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "specials", force: true do |t|
