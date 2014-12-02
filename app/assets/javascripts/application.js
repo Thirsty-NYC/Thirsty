@@ -14,5 +14,9 @@
 //= require jquery_ujs
 //= require turbolinks
 // require_tree .
+//= require underscore.js
+//= require backbone.js
+//= require bootstrap.js
+//= require app.js
 
 
