@@ -32579,3 +32579,5 @@ Migrating to ChangeSpecials (20141122003012)
   [1m[36mBar Load (3.5ms)[0m  [1mSELECT "bars".* FROM "bars"[0m
   [1m[35mBar Load (2.3ms)[0m  SELECT "bars".* FROM "bars"
   [1m[36mBar Load (1.8ms)[0m  [1mSELECT "bars".* FROM "bars"[0m
+  [1m[36mBar Load (11.2ms)[0m  [1mSELECT "bars".* FROM "bars"[0m
+  [1m[35mBar Load (12.5ms)[0m  SELECT "bars".* FROM "bars"
