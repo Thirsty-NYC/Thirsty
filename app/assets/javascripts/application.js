@@ -12,11 +12,11 @@
 //
 //= require jquery
 //= require jquery_ujs
+// require bootstrap.js
+// require bootstrap.min.js
 //= require turbolinks
 // require_tree .
 //= require underscore.js
-//= require backbone.js
-//= require bootstrap.js
 //= require app.js
 
 

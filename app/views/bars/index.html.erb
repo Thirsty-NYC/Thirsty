@@ -1,10 +1,22 @@
-<html>
-<head>
-	<title>Thirsty</title>
-</head>
-<body>
-	<div class="container">
-		
+<div class="container">
+	<div id="pageOne">
+		<%= image_tag "Thirsty_logo.png" %>
+		<button id="getHappy"class="btn btn-primary">Get Happy</button>
 	</div>
-</body>
-</html>
+
+
+	<div style="display:none" id="pageTwo">
+		<%= image_tag "map_manhattan.png" %>
+		<select>
+			<% @bars.each do |bar| %>
+			<option value=<%=bar.id %>> <%=bar.name%></option>
+			<% end %>
+		</select>
+			
+
+	</div>
+
+
+</div>
+
+	
