@@ -1,12 +1,7 @@
 class NeighborhoodsController < ApplicationController
 	def index 
-
-
-	end 
-
-
+	end
 	def show
-		binding.pry
 		neighborhood = Neighborhood.find_by(params["id"]).name
 		bars = Bar.where(neighborhood: neighborhood)
 		array = []
@@ -20,6 +15,15 @@ class NeighborhoodsController < ApplicationController
 			end 
 		end 
 
+<<<<<<< HEAD
 		render :json => specials
+=======
+		array2 = []
+		array2 << bars
+		array2 << array
+
+		render :json => array2
+
+>>>>>>> 4abbe0f4ec311b015a692dbeab240e962458b438
 	end 
 end 

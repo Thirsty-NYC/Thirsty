@@ -7,19 +7,21 @@ $(function(){
 	})
 })
 
-function getHappy(){
+var getHappy = function getHappy(){
 	$("#pageOne").fadeOut("slow", function(){
 		console.log("inside of gethappy")
 		$("#pageTwo").show()
 	})
 }
 
-function getBars(){
+var getBars = function getBars(){
 	var neighborhoodId = $("select")[0].value
 	$.ajax({
 		url: "/neighborhoods/" + neighborhoodId,
 		success: function(data){
-			console.log(data)
+			for (var i = 0; i < data.length; i++){
+				console.log(data)
+			}
 		}
 	})
 }
