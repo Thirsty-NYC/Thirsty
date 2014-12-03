@@ -14,14 +14,38 @@ var getHappy = function getHappy(){
 	})
 }
 
+// gets bar and specials for single neighborhood
 var getBars = function getBars(){
 	var neighborhoodId = $("select")[0].value
 	$.ajax({
 		url: "/neighborhoods/" + neighborhoodId,
 		success: function(data){
+		// data[0] is array of bar objects in neighborhood, data[1] is an array of hashes with bar special deals 
+			console.log(data)
+			// function that makes neighborhood name
+			// function that makes bar divs with specials
 			for (var i = 0; i < data.length; i++){
-				console.log(data)
+				makeBarDiv(data[0][i], data[1][i])
 			}
 		}
 	})
 }
+
+var makeBarDiv = function (bar, specials){
+	barSpecial = $.each(specials, function(key, value){
+		
+	})
+	$("<div/>", {
+    class: "bar",
+    innerHTML: "<h1>"+ bar.name + "<h1>" + "<p>" + bar.location + ", "+ bar.phone_number+"</p>"
+
+
+    click: function() {
+      $( this ).toggleClass(  );
+    } }).appendTo("#pageThree");
+
+
+}
+
+
+
