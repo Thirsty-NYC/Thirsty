@@ -24,7 +24,7 @@ var getBars = function getBars(){
 			console.log(data)
 			// function that makes neighborhood name
 			// function that makes bar divs with specials
-			for (var i = 0; i < data.length; i++){
+			for (var i = 0; i < data[0].length; i++){
 				makeBarDiv(data[0][i], data[1][i])
 			}
 		}
@@ -32,20 +32,15 @@ var getBars = function getBars(){
 }
 
 var makeBarDiv = function (bar, specials){
+	console.log(specials)
 	barSpecial = $.each(specials, function(key, value){
-		
+		console.log(key)
+		console.log(value)
 	})
 	$("<div/>", {
     class: "bar",
     innerHTML: "<h1>"+ bar.name + "<h1>" + "<p>" + bar.location + ", "+ bar.phone_number+"</p>"
 
-
-    click: function() {
-      $( this ).toggleClass(  );
-    } }).appendTo("#pageThree");
-
-
+	})
 }
-
-
-
+// ;
