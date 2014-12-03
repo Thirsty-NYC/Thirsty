@@ -6,7 +6,8 @@ class NeighborhoodsController < ApplicationController
 
 
 	def show
-		neighborhood = Neighborhoods.find_by(params[:id]).name
+		binding.pry
+		neighborhood = Neighborhood.find_by(params["id"]).name
 		bars = Bar.where(neighborhood: neighborhood)
 		render :json => bars
 	end 
