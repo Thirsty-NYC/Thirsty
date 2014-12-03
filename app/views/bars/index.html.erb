@@ -14,9 +14,10 @@
 		<%= image_tag "map_manhattan.png" %>
 		<select>
 			<% @neighborhoods.each do |neighborhood| %>
-			<option value=<%=neighborhood.id %>> <%=neighborhood.name%></option>
+			<option value=<%=neighborhood.id%>> <%=neighborhood.name%></option>
 			<% end %>
 		</select>
+		<button>Get Happy </button>
 			
 
 	</div>
